@@ -75,7 +75,7 @@ enum class RemoteButton {
 //% color=50 weight=19 icon="\uf1eb"
 //% block="IrRemote"
 namespace IrRemote { 
-  vector<vA> any_actions;
+  vA any_actions;
   map<RemoteButton, vA> actions;
   map<RemoteButton, uint32_t> lastact;
   Timer tsb; 
@@ -106,7 +106,7 @@ namespace IrRemote {
   void cA(vA runner){for(int i=0;i<runner.size();i++){runAction0(runner[i]);} }
 
   void onReceivable(){
-    int x = rx->getData(&fmt, buf, 32 * 8);
+    rx->getData(&fmt, buf, 32 * 8);
     if (actions.find((RemoteButton)buf[2]) != actions.end()) {
       now = tsb.read_ms();
       if(now - lastact[(RemoteButton)buf[2]] < 100) return;
