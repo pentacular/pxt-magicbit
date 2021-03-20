@@ -17,7 +17,7 @@ declare namespace IrRemote {
      * any button pushed.
      */
     //% blockId=onAnyPressEvent
-    //% block="on button pressed" shim=IrRemote::onAnyPressEvent
+    //% block="on button pressed x" shim=IrRemote::onAnyPressEvent
     function onAnyPressEvent(body: (button: number) => void): void;
 
     /**
