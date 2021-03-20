@@ -103,6 +103,15 @@ namespace IrRemote {
     any_actions.push_back(body);
   }
 
+  /**
+  * any button pushed.
+  */
+  //% blockId=onAnyPressEvent
+  //% block="on button pressed"
+  void onAnyPressEvent(Action body) {
+    any_actions.push_back(body);
+  }
+
   void cA(vA runner){for(int i=0;i<runner.size();i++){runAction0(runner[i]);} }
 
   void onReceivable(){
