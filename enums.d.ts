@@ -24,7 +24,7 @@
     }
 
 
-    declare const enum remotebutton {
+    declare const enum RemoteButton {
     //% block=A
     A = 0x45,
     //% block=B

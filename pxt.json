@@ -5,7 +5,8 @@
     "license": "MIT",
     "dependencies": {
         "core": "*",
-        "neopixel": "github:kittenbot/pxt-neopixel#v0.6.13"
+        "neopixel": "github:kittenbot/pxt-neopixel#v0.6.13",
+        "microphone": "*"
     },
     "files": [
         "README.md",

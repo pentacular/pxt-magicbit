@@ -11,11 +11,14 @@ declare namespace IrRemote {
      */
     //% blockId=onPressEvent
     //% block="on |%btn| button pressed" shim=IrRemote::onPressEvent
-    function onPressEvent(btn: remotebutton, body: () => void): void;
+    function onPressEvent(btn: RemoteButton, body: () => void): void;
 
+    /**
+     * any button pushed.
+     */
     //% blockId=onAnyPressEvent
-    //% block="on any button pressed" shim=IrRemote::onAnyPressEvent
-    function onAnyPressEvent(body: (btn: number) => void): void;
+    //% block="on button pressed" shim=IrRemote::onAnyPressEvent
+    function onAnyPressEvent(body: () => void): void;
 
     /**
      * initialises local variablesssss
