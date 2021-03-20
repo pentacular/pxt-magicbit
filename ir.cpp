@@ -98,7 +98,7 @@ namespace IrRemote {
   * any button pushed.
   */
   //% blockId=onAnyPressEvent
-  //% block="on button pressed x |%btn|"
+  //% block="on button pressed"
   void onAnyPressEvent(Action body) {
     any_actions.push_back(body);
   }
