@@ -114,7 +114,7 @@ namespace IrRemote {
       cA(actions[(RemoteButton)buf[2]]); 
     }
     for (auto& action : any_actions) {
-      runAction1(action, buf[2]);
+      runAction1(action, pxt::fromUInt(buf[2]));
     }
   }
 
